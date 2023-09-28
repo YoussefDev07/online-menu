@@ -1,0 +1,25 @@
+AddDefaultCharset utf-8
+
+# diractions
+
+Options -Indexes
+
+# GZIP
+
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/css text/xml text/plain application/javascript font/ttf font/woff2 image/x-icon image/png image/jpeg image/svg+xml
+</ifmodule>
+
+# index
+
+DirectoryIndex index.php
+
+# errors
+
+ErrorDocument 400 http://localhost/www/khamsat/Java/error/400.htm
+ErrorDocument 403 http://localhost/www/khamsat/Java/error/403.htm
+ErrorDocument 404 http://localhost/www/khamsat/Java/error/404.htm
+ErrorDocument 408 http://localhost/www/khamsat/Java/error/408.htm
+ErrorDocument 500 http://localhost/www/khamsat/Java/error/500.htm
+ErrorDocument 502 http://localhost/www/khamsat/Java/error/502.htm
+ErrorDocument 504 http://localhost/www/khamsat/Java/error/504.htm

@@ -1,0 +1,64 @@
+@charset "UTF-8"
+@use "_sass/primary"
+@import "_sass/colors"
+@import "_sass/fonts"
+@import "_sass/selection"
+
+//! container
+
+._container
+    width: 100vw
+    height: 100vh
+    background: linear-gradient($primary-color -99%, $back-color)
+    font-family: $font
+
+//! header
+
+header
+    width: 100%
+    height: 100px
+    display: flex
+    align-items: center
+    img
+        width: 75px
+        height: 75px
+        margin-right: 25px
+    h1
+        margin-right: 25px
+        font-size: 38px
+        color: $basic-color
+
+//! media: header
+
+@media (max-width:1050px)
+    header
+      justify-content: center
+      h1
+        display: none
+
+//! main
+
+main
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    h1
+        margin-top: 50px
+        font-size: 50px
+        color: $basic-color
+    p
+        margin-top: 25px
+        font-size: 28px
+        color: $basic-color
+    button
+        margin-top: 45px
+        width: 250px
+        height: 55px
+        background: none
+        border: 1px solid $basic-color
+        border-radius: 10px
+        font-family: $font
+        font-size: 25px
+        color: $basic-color
+        cursor: pointer

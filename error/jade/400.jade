@@ -1,0 +1,48 @@
+doctype
+html(lang="ar", type="text/html")
+  - const err = 400;
+  - const msg = "خطأ في تنفيذ الأمر";
+  head
+    //- meta
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="theme-color", content="#983621")
+    meta(name="color-scheme", content="dark")
+    meta(name="author", content="Youssef Ibrahim")
+    meta(name="owner", content="Youssef Ibrahim Afsa")
+    meta(name="copyright", content="Java Café")
+    meta(name="google", content="notranslate")
+    meta(name="robots", content="none")
+    meta(name="title", content="جافا - "+err)
+    meta(name="description", content=msg)
+    meta(name="twitter:card", content="summary")
+    meta(name="twitter:url", content="http://localhost/www/khamsat/Java")
+    meta(name="twitter:title", content="جافا - "+err)
+    meta(name="twitter:description", content=msg)
+    meta(name="twitter:image", content="../assets/images/logo.ico")
+    meta(name="twitter:image:alt", content="شعار مقهى جافا")
+    meta(name="twitter:creator", content="@YoussefDev7")
+    meta(name="twitter:creator:id", content="1427454968232022016")
+    meta(property="og:title", content="جافا - "+err)
+    meta(property="og:description", content=msg)
+    meta(property="og:image", content="../assets/images/logo.ico")
+    meta(property="og:image:alt", content="شعار مقهى جافا")
+    meta(property="fb:admins", content="100093603992488")
+    //- link
+    link(rel="icon", type="image/png", href="../assets/images/logo.ico")
+    link(rel="stylesheet", href="./css/main.css")
+    link(rel="stylesheet", href="../assets/css/animate.css")
+    //- title
+    title #{err} - #{msg}
+    //- script
+    script(src="../assets/js/wow.js")
+    script(type="application/javascript", src="./js/main.js", async=true)
+    noscript نتأسف، يجب عليك تفعيل الجافا سكريبت لزيارة الموقع
+  body
+    //- container
+    ._container
+      include ../includes/jade/header.jade
+      //- main
+      main
+        h1 #{err}
+        p #{msg}

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard/
+Disallow: /error/
+Disallow: /includes/
+Disallow: /master/
+Disallow: /search.php
+Sitemap: http://localhost/www/khamsat/Java/sitemap.xml

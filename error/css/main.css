@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+}
+
+html {
+  color-scheme: dark;
+  direction: rtl;
+}
+
+@font-face {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../assets/fonts/cairo.ttf) format("truetype");
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0898-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC;
+}
+@font-face {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../assets/fonts/cairo.ttf) format("truetype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../assets/fonts/cairo.ttf) format("truetype");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+::-moz-selection {
+  background-color: #983621;
+  color: #ffffff;
+}
+::selection {
+  background-color: #983621;
+  color: #ffffff;
+}
+
+img::-moz-selection {
+  background: none;
+}
+
+img::selection {
+  background: none;
+}
+
+._container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#983621 -99%, #000000);
+  font-family: "Cairo";
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+header img {
+  width: 75px;
+  height: 75px;
+  margin-right: 25px;
+}
+header h1 {
+  margin-right: 25px;
+  font-size: 38px;
+  color: #ffffff;
+}
+
+@media (max-width: 1050px) {
+  header {
+    justify-content: center;
+  }
+  header h1 {
+    display: none;
+  }
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main h1 {
+  margin-top: 50px;
+  font-size: 50px;
+  color: #ffffff;
+}
+main p {
+  margin-top: 25px;
+  font-size: 28px;
+  color: #ffffff;
+}
+main button {
+  margin-top: 45px;
+  width: 250px;
+  height: 55px;
+  background: none;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  font-family: "Cairo";
+  font-size: 25px;
+  color: #ffffff;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
